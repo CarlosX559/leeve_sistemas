@@ -350,4 +350,4 @@ function colors() {
   });
 
 }
-window.addEventListener("scroll", colors);
+//window.addEventListener("scroll", colors);
