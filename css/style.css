@@ -464,7 +464,7 @@ nav ul li a {
 .box_blur_1 {
     position: absolute;
     border-radius: 400px;
-    background:  #56ACDE;
+    background: #56ACDE;
     filter: blur(350px);
     width: 400px;
     height: 400px;
@@ -476,7 +476,7 @@ nav ul li a {
 .box_blur_2 {
     position: absolute;
     border-radius: 400px;
-    background:  #56ACDE;
+    background: #56ACDE;
     filter: blur(350px);
     width: 400px;
     height: 400px;
@@ -507,7 +507,7 @@ nav ul li a {
     align-items: center;
     row-gap: 40px;
     column-gap: 60px;
-    width: 100%; 
+    width: 100%;
 }
 
 .box_compativel {
@@ -975,6 +975,7 @@ footer {
     .area_footer {
         padding: 0px 20px;
     }
+
     .sub_title_footer p {
         font-size: 16px;
     }
@@ -987,9 +988,14 @@ footer {
         --font-titles: 28px;
         --font-sub-titles: 16px;
     }
+
     .area_home {
         padding: 0px 20px;
         width: auto;
+    }
+
+    .container_home {
+        padding: 40px 0px 0px 0px;
     }
 
     /*Compativel*/
@@ -1005,4 +1011,34 @@ footer {
         padding: 0px 20px;
     }
 
+    .area_cards {
+        padding: 0px 20px;
+    }
+
+    .cards_section {
+        height: auto;
+    }
+
+    .sub_title_cards_section p {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .box_blur_1 {
+        width: 350px;
+        height: 350px;
+    }
+
+    .box_blur_2 {
+        width: 350px;
+        height: 350px;
+    }
+
+}
+
+@media(max-width: 375px) {
+    :root {
+        --font-titles: 26px;
+        --font-sub-titles: 16px;
+    }
 }
