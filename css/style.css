@@ -7,11 +7,39 @@
 :root {
     --font-titles: 42px;
     --font-sub-titles: 18px;
+    --text-color-1: #3A3839;
+    --text-color-2: #56ACDE;
+    --text-color-3: #FFFFFF;
+    --text-color-4: #595959;
+    --bg-color-1: #F4F4F4;
+    --bg-color-2: #02A6DC;
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    overscroll-behavior-y: none;
+    transition-duration: 400ms;
+    transition-property: color, background-color;
+    transition-timing-function: ease-out;
+}
+
+.color-1 h2 {
+    transition-duration: 400ms;
+    transition-property: color;
+    transition-timing-function: ease-out;
+}
+
+.color-2 p {
+    transition-duration: 400ms;
+    transition-property: color;
+    transition-timing-function: ease-out;
+}
+
+.color-texts {
+    transition-duration: 400ms;
+    transition-property: color;
+    transition-timing-function: ease-out;
 }
 
 a {
@@ -389,7 +417,7 @@ nav ul li a {
 .cards_section {
     border-radius: 8px;
     border: 0.661px solid #F4F4F4;
-    background: #02A6DC;
+    background: var(--bg-color-2);
     box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.06);
     max-width: 358px;
     height: 290px;
@@ -399,19 +427,19 @@ nav ul li a {
 }
 
 .cards_section:hover {
-    background: #F4F4F4;
+    background: var(--bg-color-1);
 }
 
 .cards_section:hover>.cards_section_int .title_cards_section h2 {
-    color: #56ACDE;
+    color: var(--text-color-2);
 }
 
 .cards_section:hover>.cards_section_int .sub_title_cards_section p {
-    color: #56ACDE;
+    color: var(--text-color-2);
 }
 
 .cards_section:hover>.cards_section_int svg path {
-    fill: #56ACDE;
+    fill: var(--text-color-2);
 }
 
 .cards_section_int {
@@ -426,7 +454,7 @@ nav ul li a {
 }
 
 .title_cards_section h2 {
-    color: #FFF;
+    color: var(--text-color-3);
     font-size: 22px;
     font-weight: 600;
     line-height: 100%;
@@ -434,7 +462,7 @@ nav ul li a {
 }
 
 .sub_title_cards_section p {
-    color: #FFF;
+    color: var(--text-color-3);
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -528,7 +556,7 @@ nav ul li a {
 }
 
 .title_compativel h2 {
-    color: #3A3839;
+    color: var(--text-color-1);
     font-size: 30px;
     font-weight: 700;
     line-height: 120%;
@@ -536,12 +564,12 @@ nav ul li a {
 }
 
 .title_compativel h2 b {
-    color: #56ACDE;
+    color: var(--text-color-2);
     font-weight: 700;
 }
 
 .sub_title_compativel p {
-    color: #595959;
+    color: var(--text-color-4);
     font-size: var(--font-sub-titles);
     font-weight: 400;
     line-height: 174%;
@@ -567,7 +595,7 @@ nav ul li a {
 }
 
 .title_planos_container h2 {
-    color: #222;
+    color: var(--text-color-1);
     font-size: var(--font-titles);
     font-weight: 500;
     line-height: 120%;
@@ -576,7 +604,7 @@ nav ul li a {
 }
 
 .title_planos_container h2 b {
-    color: #56ACDE;
+    color: var(--text-color-2);
     font-weight: 700;
 }
 
@@ -611,7 +639,7 @@ nav ul li a {
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--text-color-3);
     margin: 0px;
 }
 
@@ -633,9 +661,8 @@ nav ul li a {
     max-width: 250px;
     height: auto;
     padding: 30px 20px;
-    background: linear-gradient(0deg, #02A6DC 0%, #02A6DC 100%), #56ACDE;
+    background:  var(--bg-color-2);
     box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.06);
-    backdrop-filter: blur(2px);
     border-radius: 20px;
 }
 
@@ -660,7 +687,7 @@ nav ul li a {
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--text-color-3);
     margin: 0px;
 }
 
@@ -671,7 +698,7 @@ nav ul li a {
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color-3);
     margin: 0px;
 }
 
@@ -683,7 +710,7 @@ nav ul li a {
 }
 
 .preco_del del {
-    color: #FFFFFF;
+    color: var(--text-color-3);
     font-size: 15px;
 }
 
@@ -692,7 +719,7 @@ nav ul li a {
     font-size: 34px;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--text-color-3);
     margin: 0px;
 }
 
@@ -706,7 +733,7 @@ nav ul li a {
 
 .btn_planos {
     border-radius: 8px;
-    border: 0.5px solid #F4F4F4;
+    border: 0.5px solid var(--text-color-3);
     background: linear-gradient(260deg, #82D1FF -13.56%, #429FD6 107.07%);
     box-shadow: 0px 0px 25px -8px rgba(44, 124, 236, 1);
     padding: 8px 15px;
@@ -730,7 +757,7 @@ nav ul li a {
     line-height: 124%;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--text-color-3);
     margin: 0px;
 }
 

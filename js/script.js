@@ -287,4 +287,67 @@ function planos() {
 }
 planos();
 
+function colors() {
+  
+  const area_window = window.innerHeight * 0.21 * 2.1;
 
+  let section = document.querySelectorAll(".container_compativel");
+  let titles = document.querySelectorAll(".color-1 h2");
+  let titles_b = document.querySelectorAll(".color-1 h2 b");
+  let subtitle = document.querySelectorAll(".color-2 p");
+  let bg_cards = document.querySelectorAll(".cards_bg");
+  let color_texts = document.querySelectorAll(".color-texts");
+  let svg_icons = document.querySelectorAll(".cards_section_int svg path");
+
+  section.forEach( (element) => {
+
+    let posicaoAtual = element.getBoundingClientRect().top;
+
+    if( area_window > posicaoAtual ) {
+        document.querySelector("body").style.background = "#02A6DC";
+
+        titles.forEach( (element) => {
+          element.style.color = "var(--text-color-3)";
+        });
+        titles_b.forEach( (element) => {
+          element.style.color = "var(--text-color-1)";
+        });
+        subtitle.forEach( (element) => {
+          element.style.color = "var(--text-color-3)";
+        });
+        bg_cards.forEach( (element) => {
+          element.style.background = "var(--bg-color-1)";
+        });
+        color_texts.forEach( (element) => {
+          element.style.color = "var(--text-color-1)";
+        });
+        svg_icons.forEach( (element) => {
+          element.style.fill = "var(--text-color-1)";
+        });
+
+    }else {
+      document.querySelector("body").style.background = "#fff";
+      titles.forEach( (element) => {
+          element.style.color = "var(--text-color-1)";
+      });
+      titles_b.forEach( (element) => {
+        element.style.color = "var(--text-color-2)";
+      });
+      subtitle.forEach( (element) => {
+        element.style.color = "var(--text-color-1)";
+      });
+      bg_cards.forEach( (element) => {
+        element.style.background = "var(--bg-color-2)";
+      });
+      color_texts.forEach( (element) => {
+        element.style.color = "var(--text-color-3)";
+      });
+      svg_icons.forEach( (element) => {
+        element.style.fill = "var(--text-color-3)";
+      });
+    }
+    
+  });
+
+}
+window.addEventListener("scroll", colors);
