@@ -331,7 +331,7 @@ nav ul li a {
     letter-spacing: 0.18px;
 }
 
-.box_controle {
+.controle {
     max-width: 700px;
     width: 100%;
 }
@@ -417,7 +417,7 @@ nav ul li a {
 .cards_section {
     border-radius: 8px;
     border: 0.661px solid #F4F4F4;
-    background: var(--bg-color-2);
+    background-color: var(--bg-color-2);
     box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.06);
     max-width: 358px;
     height: 290px;
@@ -427,7 +427,7 @@ nav ul li a {
 }
 
 .cards_section:hover {
-    background: var(--bg-color-1);
+    background-color: var(--bg-color-1);
 }
 
 .cards_section:hover>.cards_section_int .title_cards_section h2 {
@@ -538,13 +538,12 @@ nav ul li a {
     width: 100%;
 }
 
-.box_compativel {
-    border-radius: 26px;
-    background: #F5F5F5;
+.sistemas_solucoes {
     box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.1);
-    max-width: 540px;
+    max-width: max-content;
     width: 100%;
-    height: 340px;
+    height: auto;
+    border-radius: 15px;
 }
 
 .area_texts_compativel {
@@ -612,12 +611,13 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #d5e8fc;
+    border-radius: 38px;
+    background: #F9F9F9;
+    box-shadow: 12px -3px 25px -7px rgba(0, 0, 0, 0.25) inset;
     width: 100%;
     max-width: 300px;
     height: 40px;
-    border-radius: 25px;
-    padding: 5px 5px;
+    padding: 6px 12px;
 }
 
 .plano_anual {
@@ -1039,7 +1039,8 @@ footer {
     }
 
     .area_cards {
-        padding: 0px 20px;
+        padding: 0px 20px; 
+        gap: 20px;
     }
 
     .cards_section {
@@ -1060,6 +1061,28 @@ footer {
         width: 350px;
         height: 350px;
     }
+
+    #email_home {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: calc(100% - 20px);
+        gap: 15px;
+    }
+
+    .email {
+        max-width: calc(100% - 20px);
+    }
+
+    .enviar {
+        width: 100%;
+    }
+
+    .icones_home {
+        width: 150px;
+        height: 120px;
+    }
+
 
 }
 
