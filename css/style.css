@@ -454,9 +454,9 @@ nav ul li a {
 
 .cards_section {
     border-radius: 8px;
-    border: 0.661px solid #F4F4F4;
+    border: 0.6px solid #F4F4F4;
     background-color: var(--bg-color-2);
-    box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 13px 26px 0px rgba(0, 0, 0, 0.06);
     max-width: 358px;
     height: 290px;
     width: 100%;
@@ -1007,6 +1007,10 @@ footer {
         padding: 0px 20px;
     }
 
+    .title_controle h2 {
+        font-size: 28px;
+    }
+
     /*Compativel*/
     .area_compativel {
         flex-direction: column;
@@ -1066,6 +1070,14 @@ footer {
 
     .container_home {
         padding: 40px 0px 0px 0px;
+    }
+
+    .area_texts_controle {
+        gap: 10px;
+    }
+
+    .title_controle h2 {
+        font-size: 22px;
     }
 
     /*Compativel*/
