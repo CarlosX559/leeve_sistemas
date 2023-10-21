@@ -210,7 +210,7 @@ nav ul li a {
 }
 
 .home_bg {
-    max-width: max-content;
+    max-width: 700px;
     width: 100%;
 }
 
@@ -341,9 +341,9 @@ nav ul li a {
 }
 
 .title_controle h2 {
-    color: #222;
-    font-size: var(--font-titles);
-    font-weight: 500;
+    color: #42454A;
+    font-size: 34px;
+    font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.42px;
 }
@@ -356,7 +356,15 @@ nav ul li a {
 .sub_title_controle p {
     color: #464646;
     font-size: var(--font-sub-titles);
-    font-weight: 400;
+    font-weight: 300;
+    line-height: 144%;
+    letter-spacing: 0.18px;
+}
+
+.info_controle p {
+    color: #464646;
+    font-size: var(--font-sub-titles);
+    font-weight: 500;
     line-height: 144%;
     letter-spacing: 0.18px;
 }
@@ -600,9 +608,14 @@ nav ul li a {
 .sub_title_compativel p {
     color: var(--text-color-4);
     font-size: var(--font-sub-titles);
-    font-weight: 400;
+    font-weight: 300;
     line-height: 174%;
     letter-spacing: 0.36px;
+}
+
+
+.sub_title_compativel p b {
+    font-weight: 500;
 }
 
 /*planos*/
