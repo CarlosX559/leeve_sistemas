@@ -8,11 +8,11 @@
     --font-titles: 42px;
     --font-sub-titles: 18px;
     --text-color-1: #3A3839;
-    --text-color-2: #56ACDE;
+    --text-color-2: #2575FC;
     --text-color-3: #FFFFFF;
     --text-color-4: #595959;
     --bg-color-1: #F4F4F4;
-    --bg-color-2: #02A6DC;
+    --bg-color-2: #2575FC;
 }
 
 body {
@@ -130,7 +130,7 @@ nav ul li a {
 .btn_menu {
     border-radius: 8px;
     border: 0.5px solid #F4F4F4;
-    background: linear-gradient(260deg, #82D1FF -13.56%, #429FD6 107.07%);
+    background: linear-gradient(260deg, #82D1FF -13.56%, #2575FC 107.07%);
     box-shadow: 0px 0px 25px -8px rgba(44, 124, 236, 1);
     padding: 8px 15px;
     transition: all ease 200ms;
@@ -197,7 +197,7 @@ nav ul li a {
 }
 
 .title_home h2 b {
-    color: #56ACDE;
+    color:#2575FC;
     font-weight: 700;
 }
 
@@ -248,7 +248,7 @@ nav ul li a {
 .enviar {
     border-radius: 8px;
     border: 0.661px solid #F4F4F4;
-    background: linear-gradient(261deg, #82D1FF -13.56%, #429FD6 107.07%);
+    background: linear-gradient(261deg, #82D1FF -13.56%, #2575FC 107.07%);
     box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.06);
     padding: 10px 8px;
     color: #FEFEFE;
@@ -280,7 +280,7 @@ nav ul li a {
 }
 
 .icones_home:hover {
-    background: #02A6DC;
+    background: #2575FC;
 }
 
 .icones_home:hover > .icones_home_int svg path {
@@ -349,7 +349,7 @@ nav ul li a {
 }
 
 .title_controle h2 b {
-    color: #56ACDE;
+    color: #2575FC;
     font-weight: 700;
 }
 
@@ -377,7 +377,7 @@ nav ul li a {
 .btn_lead {
     border-radius: 8px;
     border: 0.5px solid #F4F4F4;
-    background: linear-gradient(260deg, #82D1FF -13.56%, #429FD6 107.07%);
+    background: linear-gradient(260deg, #82D1FF -13.56%, #2575FC 107.07%);
     box-shadow: 0px 0px 25px -8px rgba(44, 124, 236, 1);
     padding: 8px 15px;
     transition: all ease 200ms;
@@ -530,7 +530,7 @@ nav ul li a {
 .box_blur_1 {
     position: absolute;
     border-radius: 400px;
-    background: #56ACDE;
+    background: #2575FC;
     filter: blur(350px);
     width: 400px;
     height: 400px;
@@ -542,7 +542,7 @@ nav ul li a {
 .box_blur_2 {
     position: absolute;
     border-radius: 400px;
-    background: #56ACDE;
+    background: #2575FC;
     filter: blur(350px);
     width: 400px;
     height: 400px;
@@ -668,7 +668,7 @@ nav ul li a {
     width: 100%;
     padding: 5px 10px;
     border-radius: 20px;
-    background-color: #02A6DC;
+    background-color: #2575FC;
     cursor: pointer;
     transition: all ease 200ms;
 }
@@ -777,7 +777,7 @@ nav ul li a {
 .btn_planos {
     border-radius: 8px;
     border: 0.5px solid var(--text-color-3);
-    background: linear-gradient(260deg, #82D1FF -13.56%, #429FD6 107.07%);
+    background: linear-gradient(260deg, #82D1FF -13.56%, #2575FC 107.07%);
     box-shadow: 0px 0px 25px -8px rgba(44, 124, 236, 1);
     padding: 8px 15px;
     transition: all ease 200ms;
@@ -886,7 +886,7 @@ footer {
     }
 
     .menu_open rect {
-        fill: #56ACDE;
+        fill: #2575FC;
     }
 
     .close {
