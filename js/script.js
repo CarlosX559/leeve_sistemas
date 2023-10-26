@@ -16,13 +16,15 @@ function menu() {
   });
 
   let area_menu = document.querySelectorAll(".area_menu nav ul li a");
-
-  area_menu.forEach((element) => {
-    element.addEventListener("click", () => {
-      menu.style.right = "-100%";
-      menu.style.animation = "move ease-out 400ms";
+  if (window.innerWidth <= 1024) {
+    area_menu.forEach((element) => {
+      element.addEventListener("click", () => {
+        menu.style.right = "-100%";
+        menu.style.animation = "move ease-out 400ms";
+      });
     });
-  });
+  }
+
 }
 menu();
 
@@ -286,9 +288,9 @@ function planos() {
 
 }
 planos();
-
+/*
 function colors() {
-  
+
   const area_window = window.innerHeight * 0.21 * 2.1;
 
   let section = document.querySelectorAll(".container_compativel");
@@ -346,8 +348,8 @@ function colors() {
         element.style.fill = "var(--text-color-3)";
       });
     }
-    
+
   });
 
-}
+}*/
 //window.addEventListener("scroll", colors);

@@ -15,6 +15,10 @@
     --bg-color-2: #2575FC;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -22,6 +26,24 @@ body {
     transition-duration: 400ms;
     transition-property: color, background-color;
     transition-timing-function: ease-out;
+}
+
+.area_whatsapp {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.area_whatsapp a {
+    height: 68px;
+}
+
+.area_whatsapp img {
+    width: 100%;
+    max-width: 68px;
+    height: 68px;
 }
 
 .color-1 h2 {
@@ -78,6 +100,9 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    background: rgba(201, 234, 254, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .container_menu_int {
@@ -93,7 +118,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 20px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
 }
 
 .area_menu a {
@@ -130,7 +155,7 @@ nav ul li a {
 .btn_menu {
     border-radius: 8px;
     border: 0.5px solid #F4F4F4;
-    background: linear-gradient(260deg, #82D1FF -13.56%, #2575FC 107.07%);
+    background: #2575FC;
     box-shadow: 0px 0px 25px -8px rgba(44, 124, 236, 1);
     padding: 8px 15px;
     transition: all ease 200ms;
@@ -159,7 +184,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 40px 0px 40px 0px;
+    padding: 100px 0px 40px 0px;
 }
 
 .container_home_int {
@@ -197,7 +222,7 @@ nav ul li a {
 }
 
 .title_home h2 b {
-    color:#2575FC;
+    color: #2575FC;
     font-weight: 700;
 }
 
@@ -248,7 +273,7 @@ nav ul li a {
 .enviar {
     border-radius: 8px;
     border: 0.661px solid #F4F4F4;
-    background: linear-gradient(261deg, #82D1FF -13.56%, #2575FC 107.07%);
+    background: #71c660;
     box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.06);
     padding: 10px 8px;
     color: #FEFEFE;
@@ -283,11 +308,11 @@ nav ul li a {
     background: #2575FC;
 }
 
-.icones_home:hover > .icones_home_int svg path {
+.icones_home:hover>.icones_home_int svg path {
     fill: #FFFFFF;
 }
 
-.icones_home:hover > .icones_home_int .title_icones_home h2 {
+.icones_home:hover>.icones_home_int .title_icones_home h2 {
     color: #FFFFFF;
 }
 
@@ -313,7 +338,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px 60px 0px;
 }
 
 .container_controle_int {
@@ -377,7 +402,7 @@ nav ul li a {
 .btn_lead {
     border-radius: 8px;
     border: 0.5px solid #F4F4F4;
-    background: linear-gradient(260deg, #82D1FF -13.56%, #2575FC 107.07%);
+    background: #2575FC;
     box-shadow: 0px 0px 25px -8px rgba(44, 124, 236, 1);
     padding: 8px 15px;
     transition: all ease 200ms;
@@ -433,7 +458,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 .container_cards_int {
@@ -462,12 +487,14 @@ nav ul li a {
     width: 100%;
     padding: 40px 20px;
     transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
 }
 
 .cards_section:hover {
-    background-color: var(--bg-color-1);
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
+/*
 .cards_section:hover>.cards_section_int .title_cards_section h2 {
     color: var(--text-color-2);
 }
@@ -478,7 +505,7 @@ nav ul li a {
 
 .cards_section:hover>.cards_section_int svg path {
     fill: var(--text-color-2);
-}
+}*/
 
 .cards_section_int {
     display: flex;
@@ -515,7 +542,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0px 0px 40px 0px;
+    padding: 60px 0px 40px 0px;
 }
 
 .container_compativel_int {
@@ -555,7 +582,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 40px;
+    gap: 60px;
 }
 
 .area_compativel {
@@ -633,7 +660,7 @@ nav ul li a {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1300px;
 }
 
 .title_planos_container h2 {
@@ -653,7 +680,8 @@ nav ul li a {
 .area_tempo_planos {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     border-radius: 38px;
     background: #F9F9F9;
     box-shadow: 12px -3px 25px -7px rgba(0, 0, 0, 0.25) inset;
@@ -671,6 +699,11 @@ nav ul li a {
     background-color: #2575FC;
     cursor: pointer;
     transition: all ease 200ms;
+}
+
+.bg_color {
+    background-color: #07c307;
+    padding: 6px 20px;
 }
 
 .plano_anual:hover {
@@ -704,15 +737,16 @@ nav ul li a {
     max-width: 250px;
     height: auto;
     padding: 30px 20px;
-    background:  var(--bg-color-2);
+    border: 1px solid #5a5a5a;
+    /*background:  var(--bg-color-2);*/
     box-shadow: 0px 13.21117px 26.42234px 0px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
     transition: all ease 200ms;
-    transform: scale3d(1,1,1);
+    transform: scale3d(1, 1, 1);
 }
 
 .card_planos:hover {
-    transform: scale3d(1.1,1.1,1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .card_planos_int {
@@ -736,7 +770,7 @@ nav ul li a {
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--text-color-3);
+    color: var(--text-color-1);
     margin: 0px;
 }
 
@@ -747,7 +781,7 @@ nav ul li a {
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: capitalize;
-    color: var(--text-color-3);
+    color: var(--text-color-1);
     margin: 0px;
 }
 
@@ -759,7 +793,7 @@ nav ul li a {
 }
 
 .preco_del del {
-    color: var(--text-color-3);
+    color: var(--text-color-1);
     font-size: 15px;
 }
 
@@ -768,7 +802,7 @@ nav ul li a {
     font-size: 34px;
     text-align: center;
     letter-spacing: 0.04em;
-    color: var(--text-color-3);
+    color: var(--text-color-1);
     margin: 0px;
 }
 
@@ -783,7 +817,7 @@ nav ul li a {
 .btn_planos {
     border-radius: 8px;
     border: 0.5px solid var(--text-color-3);
-    background: linear-gradient(260deg, #82D1FF -13.56%, #2575FC 107.07%);
+    background: #2575FC;
     box-shadow: 0px 0px 25px -8px rgba(44, 124, 236, 1);
     padding: 8px 15px;
     transition: all ease 200ms;
@@ -835,7 +869,7 @@ footer {
 .area_footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -859,6 +893,42 @@ footer {
 }
 
 
+.area_infos_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.title_info_footer h2 {
+    color: #56ACDE;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.infos_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infos_footer a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.info_footer p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
 @media(min-width: 1600px) {
     .area_controle {
         justify-content: center;
@@ -867,13 +937,26 @@ footer {
 }
 
 @media(max-width: 1024px) {
+
+    header {
+        position: fixed;
+        background: rgba(201, 234, 254, 0.8);
+        backdrop-filter: blur(10px);
+    }
+
     .menu_mobile {
         display: flex;
         justify-content: space-between;
         align-items: center;
         max-width: 1280px;
-        padding: 20px 20px 0px 20px;
+        padding: 10px 20px 10px 20px;
+
     }
+
+    .container_home {
+        padding: 80px 0px 40px 0px;
+    }
+
 
     @keyframes move {
         0% {
@@ -1054,9 +1137,29 @@ footer {
 
     .area_footer {
         padding: 0px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .area_infos_footer {
+        gap: 20px;
+        max-width: 415px;
     }
 
     .sub_title_footer p {
+        font-size: 16px;
+    }
+
+    .title_info_footer h2 {
+        font-size: 20px;
+    }
+
+    .infos_footer a {
+        font-size: 16px;
+    }
+
+    .info_footer p {
         font-size: 16px;
     }
 
@@ -1075,7 +1178,7 @@ footer {
     }
 
     .container_home {
-        padding: 40px 0px 0px 0px;
+        padding: 100px 0px 0px 0px;
     }
 
     .area_texts_controle {
@@ -1089,6 +1192,7 @@ footer {
     /*Compativel*/
     .area_compativel_total {
         padding: 0px 20px;
+        gap: 40px;
     }
 
     .title_compativel h2 {
@@ -1100,7 +1204,7 @@ footer {
     }
 
     .area_cards {
-        padding: 0px 20px; 
+        padding: 0px 20px;
         gap: 20px;
     }
 
@@ -1143,7 +1247,15 @@ footer {
         width: 150px;
         height: 120px;
     }
+    .area_whatsapp img {
+        width: 100%;
+        max-width: 60px;
+        height: 60px;
+    }
 
+    .area_whatsapp a {
+        height: 60px;
+    }
 
 }
 
