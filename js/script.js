@@ -51,12 +51,12 @@ if (animations.length) {
 
 const plano_anual = [
   "R$ 149,90",
-  "R$ 99,90",
-  "#",
+  "R$ 99,00",
+  "https://app.leevesistemas.com.br/#/inscricao?return=emailAqui",
 
   "R$ 279,90",
-  "R$ 189,90",
-  "#",
+  "R$ 159,00",
+  "https://app.leevesistemas.com.br/#/inscricao?return=emailAqui",
 
   "R$ 339,90",
   "R$ 249,90",
@@ -68,13 +68,13 @@ const plano_anual = [
 ];
 
 const plano_semestral = [
-  "R$ 149,90",
-  "R$ 134,90",
-  "#",
+  "",
+  "R$ 129,00",
+  "https://app.leevesistemas.com.br/#/inscricao?return=emailAqui",
 
-  "R$ 279,90",
-  "R$ 249,90",
-  "#",
+  "",
+  "R$ 199,00",
+  "https://app.leevesistemas.com.br/#/inscricao?return=emailAqui",
 
   "R$ 339,90",
   "R$ 309,90",
