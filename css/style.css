@@ -812,7 +812,7 @@ nav ul li a {
     width: 100%;
     max-width: 300px;
     height: 40px;
-    padding: 6px 12px;
+    padding: 10px 0px;
 }
 
 .plano_anual {
@@ -825,13 +825,13 @@ nav ul li a {
     transition: all ease 200ms;
 }
 
-.bg_color {
+.plano_anual.selected {
+    transform: scale3d(1.1, 1.1, 1.1);
     background-color: #07c307;
-    padding: 6px 20px;
 }
 
 .plano_anual:hover {
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .plano_anual h2 {

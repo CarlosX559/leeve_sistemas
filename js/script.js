@@ -107,6 +107,16 @@ let preco_del = document.querySelectorAll(".preco_del del");
 let preco = document.querySelectorAll(".preco_plano h2");
 let link_btn = document.querySelectorAll(".area_btn_planos a");
 
+const removeActive = () => {
+  //Transformando o nodelist em array
+  const btnActive = [...document.querySelectorAll(".plano_anual.selected")];
+  //map para percorrer
+  btnActive.map((el) => {
+      el.classList.remove("selected");
+  })
+
+}
+
 function planos() {
 
   let btns_planos = document.querySelectorAll(".plano_anual");
@@ -117,6 +127,8 @@ function planos() {
 
       switch (key) {
         case 0:
+          removeActive()
+          element.classList.toggle("selected");
           preco_del.forEach((element, key) => {
             switch (key) {
               case 0:
@@ -167,10 +179,12 @@ function planos() {
                 break;
             }
           });
-
+        
           break;
         /*Semestral*/
         case 1:
+          removeActive()
+          element.classList.toggle("selected");
           preco_del.forEach((element, key) => {
             switch (key) {
               case 0:
@@ -221,7 +235,7 @@ function planos() {
                 break;
             }
           });
-
+      
           break;
         /*Mensal*/
         case 2:
