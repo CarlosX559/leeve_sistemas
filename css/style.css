@@ -10,7 +10,7 @@
     --text-color-1: #3A3839;
     --text-color-2: #2575FC;
     --text-color-3: #FFFFFF;
-    --text-color-4: #595959;
+    --text-color-4: #393939;
     --bg-color-1: #F4F4F4;
     --bg-color-2: #2575FC;
 }
@@ -274,7 +274,7 @@ nav ul li a {
 }
 
 .sub_title_home p {
-    color: #464646;
+    color: var(--text-color-4);
     font-size: var(--font-sub-titles);
     font-weight: 400;
     line-height: 144%;
@@ -338,14 +338,14 @@ nav ul li a {
     outline: none;
     width: 100%;
     max-width: 380px;
-    color: #CFCFCF;
+    color: #9a9a9a;
     font-size: var(--font-sub-titles);
     font-weight: 300;
     letter-spacing: 0.18px;
 }
 
 .email::placeholder, .nome::placeholder, .whatsapp::placeholder {
-    color: #CFCFCF;
+    color: #9a9a9a;
     font-size: var(--font-sub-titles);
     font-weight: 300;
     letter-spacing: 0.18px;
@@ -447,7 +447,7 @@ nav ul li a {
 }
 
 .title_controle h2 {
-    color: #42454A;
+    color: var(--text-color-1);
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
@@ -460,7 +460,7 @@ nav ul li a {
 }
 
 .sub_title_controle p {
-    color: #464646;
+    color: var(--text-color-4);
     font-size: var(--font-sub-titles);
     font-weight: 300;
     line-height: 144%;
@@ -468,7 +468,7 @@ nav ul li a {
 }
 
 .info_controle p {
-    color: #464646;
+    color: var(--text-color-4);
     font-size: var(--font-sub-titles);
     font-weight: 500;
     line-height: 144%;
@@ -567,6 +567,23 @@ nav ul li a {
     height: 290px;
     width: 100%;
     padding: 40px 20px;
+}
+
+.cards_section_lp {
+    border-radius: 8px;
+    border: 0.6px solid #F4F4F4;
+    background-color: var(--bg-color-2);
+    box-shadow: 0px 13px 26px 0px rgba(0, 0, 0, 0.06);
+    max-width: 340px;
+    height: 300px;
+    width: 100%;
+    padding: 30px 15px 30px 15px; 
+}
+
+.area_sub_titles_lp {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /*
