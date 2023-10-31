@@ -775,7 +775,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 60px 0px 40px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .container_compativel_int {
@@ -883,7 +883,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0px 0px 60px 0px;
+    padding: 0px 0px 80px 0px;
 }
 
 .container_planos_int {
