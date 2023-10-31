@@ -73,6 +73,7 @@ body {
 .area_whatsapp img:hover {
     animation: pulsar;
 }
+
 .color-1 h2 {
     transition-duration: 400ms;
     transition-property: color;
@@ -356,7 +357,9 @@ nav ul li a {
 }
 
 
-.email, .nome, .whatsapp {
+.email,
+.nome,
+.whatsapp {
     border-radius: 5px;
     border: 0.661px solid #F4F4F4;
     background: #FFF;
@@ -371,7 +374,9 @@ nav ul li a {
     letter-spacing: 0.18px;
 }
 
-.email::placeholder, .nome::placeholder, .whatsapp::placeholder {
+.email::placeholder,
+.nome::placeholder,
+.whatsapp::placeholder {
     color: #9a9a9a;
     font-size: var(--font-sub-titles);
     font-weight: 300;
@@ -478,6 +483,7 @@ nav ul li a {
         translate: -40vh 0;
         opacity: 0;
     }
+
     100% {
         translate: 0 0;
         opacity: 1;
@@ -489,6 +495,7 @@ nav ul li a {
         translate: 0 80vh;
         opacity: 0;
     }
+
     100% {
         translate: 0 0;
         opacity: 1;
@@ -632,6 +639,7 @@ nav ul li a {
         translate: 0 40vh;
         opacity: 0;
     }
+
     100% {
         translate: 0 0;
         opacity: 1;
@@ -643,6 +651,7 @@ nav ul li a {
         translate: 0 60vh;
         opacity: 0;
     }
+
     100% {
         translate: 0 0;
         opacity: 1;
@@ -651,14 +660,16 @@ nav ul li a {
 
 @keyframes cards_animations3 {
     0% {
-        translate: 0 80vh;  
+        translate: 0 80vh;
         opacity: 0;
     }
+
     100% {
         translate: 0 0;
         opacity: 1;
     }
 }
+
 .cards_bg1 {
     animation: cards_animations 1ms ease-in-out;
     animation-timeline: scroll();
@@ -698,7 +709,7 @@ nav ul li a {
     max-width: 340px;
     height: 300px;
     width: 100%;
-    padding: 30px 15px 30px 15px; 
+    padding: 30px 15px 30px 15px;
 }
 
 .area_sub_titles_lp {
@@ -1288,7 +1299,7 @@ footer {
         background: linear-gradient(180deg, rgba(201, 234, 254, 0.8) -13.82%, rgba(241, 241, 241, 0.8) 90.71%);
         position: fixed;
         top: 0px;
-        z-index: 99 ;
+        z-index: 99;
         transition: all ease 400ms;
     }
 
@@ -1416,6 +1427,7 @@ footer {
     .container_planos {
         padding: 0px 0px 40px 0px;
     }
+
     .preco_plano h2 {
         font-size: 30px;
     }
@@ -1469,6 +1481,7 @@ footer {
         flex-direction: column;
         padding: 20px 0px;
     }
+
     .notebook_bg {
         margin-top: 0px;
     }
@@ -1485,6 +1498,7 @@ footer {
         max-width: calc(100% - 40px);
         gap: 15px;
     }
+
     .enviar {
         width: 100%;
     }
@@ -1612,11 +1626,11 @@ footer {
     .cards_bg1 {
         animation-range: cover 0% cover 30%;
     }
-    
+
     .cards_bg2 {
         animation-range: cover 0% cover 30%;
     }
-    
+
     .cards_bg3 {
         animation-range: cover 0% cover 30%;
     }
