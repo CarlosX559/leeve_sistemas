@@ -513,7 +513,7 @@ nav ul li a {
 .animation_texts {
     animation: texts_animations 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    animation-range: cover 0% cover 30%;
 }
 
 .title_controle h2 b {
@@ -1546,7 +1546,7 @@ footer {
     .animation_texts {
         animation: texts_animations 1ms ease-in-out;
         animation-timeline: view();
-        animation-range: cover 0% cover 30%;
+        animation-range: cover 0% cover 20%;
     }
 
     .controle {
