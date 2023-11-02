@@ -451,7 +451,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 40px 0px 60px 0px;
+    padding: 40px 0px 0px 0px;
 }
 
 .container_controle_int {
@@ -609,7 +609,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0px 0px 20px 0px;
+    padding: 70px 0px 40px 0px;
 }
 
 .container_cards_int {
@@ -779,7 +779,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 60px 0px 60px 0px;
+    padding: 40px 0px 40px 0px;
 }
 
 .container_compativel_int {
@@ -1151,6 +1151,7 @@ nav ul li a {
     font-weight: 600;
     line-height: 120%;
     letter-spacing: 0.8px;
+    text-align: center;
 }
 
 /*Footer*/
@@ -1419,6 +1420,10 @@ footer {
         font-size: 26px;
     }
 
+    .container_cards {
+        padding: 40px 0px 40px 0px;
+    }
+
     /*Planos*/
     .container_planos {
         padding: 0px 0px 40px 0px;
@@ -1552,6 +1557,10 @@ footer {
     .controle {
         animation-range: cover 0% cover 30%;
     }*/
+
+    .container_controle_int {
+        padding: 40px 0px;
+    }
 
     .area_cards {
         padding: 0px 20px;
