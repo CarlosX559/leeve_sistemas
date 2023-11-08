@@ -28,11 +28,37 @@ function menu() {
 }
 menu();
 
+function faq() {
+
+  const quest = document.querySelectorAll(".faq_quests");
+  const aswer = document.querySelectorAll(".aswer");
+  const img_icon = document.querySelectorAll('.area_img_faq img');
+
+  for (let i = 0; i < quest.length; i++) {
+
+      quest[i].addEventListener("click", () => {
+
+          if (quest[i].classList.contains("close_faq")) {
+              quest[i].classList.toggle("close_faq");
+              aswer[i].classList.toggle("open");
+              img_icon[i].src = 'img/+.svg';
+          } else {
+              quest[i].classList.add("close_faq");
+              aswer[i].classList.add("open");
+
+              img_icon[i].src = 'img/-.svg';
+          }
+      });
+  }
+
+}
+faq();
+
 const animations = document.querySelectorAll("[data-animation]");
 const animationClass = "animate";
 
 function animation_scroll() {
-  const area_window = window.innerHeight * 0.21 * 3.8;
+  const area_window = window.innerHeight * 0.21 * 4.2;
 
   animations.forEach((element) => {
     let posicaoAtual = element.getBoundingClientRect().top;
