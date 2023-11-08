@@ -1310,6 +1310,12 @@ nav ul li a {
     padding: 10px;
 }
 
+.area_img_faq img {
+    width: 100%;
+    max-width: max-content;
+    height: auto;
+}
+
 .quest h2 {
     color: #595959;
     font-size: 22px;
@@ -1472,6 +1478,7 @@ footer {
 .logo_footer {
     max-width: max-content;
     width: 100%;
+    height: auto;
 }
 
 .sub_title_footer p {
